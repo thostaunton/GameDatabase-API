@@ -1,6 +1,7 @@
 package application.services;
 
 import application.beans.Game;
+import application.beans.Response;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -47,7 +48,7 @@ public class DatabaseService {
             ResultSet rs = stat.executeQuery(sql);
 
             while (rs.next()) {
-                Game game = new Game(rs.getString("Title"), rs.getString("Metadata.Genres"), rs.getString("Metadata.Publishers"), rs.getString("Release.Year"), rs.getInt("Metrics.Review Score"));
+                Game game = new Game(rs.getString("Title"), rs.getString("Metadata.Genres"), rs.getString("Metadata.Publishers"), rs.getString("Release.Year"), rs.getInt("Metrics.ReviewScore"));
                 games.add(game);
             }
         } catch (SQLException err) {
@@ -69,32 +70,29 @@ public class DatabaseService {
         }
     }
 
-    public String addEntryToDatabase(Game game){
+    public Response addEntryToDatabase(Game game){
         try
         {
             Connection con = DriverManager.getConnection(host, uName, uPass);
+            Statement stat = con.createStatement();
 
-            String query = " insert into videogames.videogames (title, genre, publisher, release, reviewScore)"
-                    + " values (?, ?, ?, ?, ?)";
+            String update = "insert into videogames.videogames (Title, Genres, Publishers, ReleaseYear, ReviewScore)"
+                    + " values ( " + "'" + game.getTitle() + "'" + ", " + "'" + game.getGenre() + "'" + ", " + "'" + game.getPublisher() + "'" + ", " + "'" + game.getRelease() + "'" + ", " + "'" + game.getReviewScore() + "'" + ")";
 
-            PreparedStatement preparedStmt = con.prepareStatement(query);
-            preparedStmt.setString   (1, game.getTitle());
-            preparedStmt.setString (2, game.getGenre());
-            preparedStmt.setString   (3, game.getPublisher());
-            preparedStmt.setString   (4, game.getRelease());
-            preparedStmt.setInt   (5, game.getReviewScore());
 
-            preparedStmt.execute();
+            stat.executeUpdate(update);
 
             con.close();
-            return "Entry added to database";
+            final Response response = new Response("Entry added to database");
+            return response;
         }
         catch (Exception e)
         {
             System.err.println("Got an exception!");
             System.err.println(e.getMessage());
         }
-        return "Entry failed";
+        final Response response = new Response("Entry failed");
+        return response;
     }
 
     public String updateEntry(String title, String variableType, String variable){

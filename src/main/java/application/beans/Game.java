@@ -6,7 +6,7 @@ public class Game {
     private String genre;
     private String publisher;
     private String release;
-    private int reviewScore;
+    private int reviewScore = 1;
 
     public Game(String title, String genre, String publisher, String release, int reviewScore) {
         this.title = title;
