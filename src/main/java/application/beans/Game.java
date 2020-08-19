@@ -5,10 +5,10 @@ public class Game {
     private String title;
     private String genre;
     private String publisher;
-    private String release;
+    private int release;
     private int reviewScore = 1;
 
-    public Game(String title, String genre, String publisher, String release, int reviewScore) {
+    public Game(String title, String genre, String publisher, int release, int reviewScore) {
         this.title = title;
         this.genre = genre;
         this.publisher = publisher;
@@ -40,11 +40,11 @@ public class Game {
         this.publisher = publisher;
     }
 
-    public String getRelease() {
+    public int getRelease() {
         return release;
     }
 
-    public void setRelease(String release) {
+    public void setRelease(int release) {
         this.release = release;
     }
 

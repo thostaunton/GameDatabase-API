@@ -28,7 +28,7 @@ public class DatabaseService {
             ResultSet rs = stat.executeQuery(sql);
 
             while (rs.next()) {
-                Game game = new Game(rs.getString("Title"), rs.getString("Metadata.Genres"), rs.getString("Metadata.Publishers"), rs.getString("Release.Year"), rs.getInt("Metrics.Review Score"));
+                Game game = new Game(rs.getString("Title"), rs.getString("Metadata.Genres"), rs.getString("Metadata.Publishers"), rs.getInt("Release.Year"), rs.getInt("Metrics.Review Score"));
                 games.add(game);
             }
 
@@ -48,7 +48,7 @@ public class DatabaseService {
             ResultSet rs = stat.executeQuery(sql);
 
             while (rs.next()) {
-                Game game = new Game(rs.getString("Title"), rs.getString("Metadata.Genres"), rs.getString("Metadata.Publishers"), rs.getString("Release.Year"), rs.getInt("Metrics.ReviewScore"));
+                Game game = new Game(rs.getString("Title"), rs.getString("Metadata.Genres"), rs.getString("Metadata.Publishers"), rs.getInt("Release.Year"), rs.getInt("Metrics.ReviewScore"));
                 games.add(game);
             }
         } catch (SQLException err) {

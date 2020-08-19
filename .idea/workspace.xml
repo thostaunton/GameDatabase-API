@@ -4,20 +4,15 @@
     <list default="true" id="c5f71cfd-9662-46af-bee8-74fd46048621" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/application/beans/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/application/beans/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/application/controllers/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/application/controllers/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/application/services/DatabaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/application/services/DatabaseService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/beans/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/beans/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/controllers/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/services/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/services/DatabaseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,22 +120,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597577124858" />
-    <state width="1865" height="311" key="GridCell.Tab.0.bottom" timestamp="1597843050136">
+    <state width="1865" height="159" key="GridCell.Tab.0.bottom" timestamp="1597850954291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="311" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597843050136" />
-    <state width="1865" height="311" key="GridCell.Tab.0.center" timestamp="1597843050136">
+    <state width="1865" height="159" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597850954291" />
+    <state width="1865" height="159" key="GridCell.Tab.0.center" timestamp="1597850954291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="311" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597843050136" />
-    <state width="1865" height="311" key="GridCell.Tab.0.left" timestamp="1597843050136">
+    <state width="1865" height="159" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597850954291" />
+    <state width="1865" height="159" key="GridCell.Tab.0.left" timestamp="1597850954291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="311" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597843050136" />
-    <state width="1865" height="311" key="GridCell.Tab.0.right" timestamp="1597843050136">
+    <state width="1865" height="159" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597850954291" />
+    <state width="1865" height="159" key="GridCell.Tab.0.right" timestamp="1597850954291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="311" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597843050136" />
+    <state width="1865" height="159" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597850954291" />
     <state width="1865" height="265" key="GridCell.Tab.1.bottom" timestamp="1597842152360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -170,16 +165,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/application/controllers/GameController.java</url>
           <line>43</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/application/services/DatabaseService.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/application/services/DatabaseService.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
