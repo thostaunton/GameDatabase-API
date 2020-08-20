@@ -1,10 +1,10 @@
 package application.beans;
 
-public class Response {
+public class Message {
 
     private String message = "";
 
-    public Response(String message) {
+    public Message(String message) {
         this.message = message;
     }
 

@@ -1,7 +1,7 @@
 package application.controllers;
 
 import application.beans.Game;
-import application.beans.Response;
+import application.beans.Message;
 import application.services.DatabaseService;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,16 +32,8 @@ public class GameController {
     }
 
     @PostMapping("/createGame")
-    public Response createGame(@RequestBody Game game){
+    public Message createGame(@RequestBody Game game){
         DatabaseService databaseConnector = new DatabaseService(host, uName, uPass);
-
-        return databaseConnector.addEntryToDatabase(game);
-    }
-
-    @PutMapping("/game")
-    public Response updateGame(String title, Game game){
-        DatabaseService databaseConnector = new DatabaseService(host, uName, uPass);
-        databaseConnector.getAllInfoFromDatabase();
 
         return databaseConnector.addEntryToDatabase(game);
     }

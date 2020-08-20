@@ -1,7 +1,7 @@
 package application.services;
 
 import application.beans.Game;
-import application.beans.Response;
+import application.beans.Message;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -62,7 +62,6 @@ public class DatabaseService {
             Connection con = DriverManager.getConnection(host, uName, uPass);
             Statement stat = con.createStatement();
             String sql = "DELETE FROM videogames WHERE Title= " + "'" + title + "'";
-            //DELETE FROM videogames WHERE Title='null';
             stat.executeUpdate(sql);
             return "Entry deleted from database";
         } catch (SQLException err) {
@@ -71,7 +70,7 @@ public class DatabaseService {
         }
     }
 
-    public Response addEntryToDatabase(Game game){
+    public Message addEntryToDatabase(Game game){
         try
         {
             Connection con = DriverManager.getConnection(host, uName, uPass);
@@ -84,16 +83,16 @@ public class DatabaseService {
             stat.executeUpdate(update);
 
             con.close();
-            final Response response = new Response("Entry added to database");
-            return response;
+            final Message message = new Message("Entry added to database");
+            return message;
         }
         catch (Exception e)
         {
             System.err.println("Got an exception!");
             System.err.println(e.getMessage());
         }
-        final Response response = new Response("Entry failed");
-        return response;
+        final Message message = new Message("Entry failed");
+        return message;
     }
 
     public String updateEntry(String title, String variableType, String variable){
