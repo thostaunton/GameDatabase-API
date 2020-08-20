@@ -47,11 +47,11 @@ public class GameController {
     }
 
     @PostMapping("/delete")
-    public String removeFromDatabase(String title){
+    public String removeFromDatabase(@RequestBody Game game){
         Game serviceStatusBean;
         DatabaseService databaseConnector = new DatabaseService(host, uName, uPass);
 
-        return databaseConnector.deleteFromDatabase(title);
+        return databaseConnector.deleteFromDatabase(game.getTitle());
     }
 
 }

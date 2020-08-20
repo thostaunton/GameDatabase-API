@@ -61,8 +61,9 @@ public class DatabaseService {
         try {
             Connection con = DriverManager.getConnection(host, uName, uPass);
             Statement stat = con.createStatement();
-            String sql = "DELETE * from videogames where ID= " + title;
-            stat.executeQuery(sql);
+            String sql = "DELETE FROM videogames WHERE Title= " + "'" + title + "'";
+            //DELETE FROM videogames WHERE Title='null';
+            stat.executeUpdate(sql);
             return "Entry deleted from database";
         } catch (SQLException err) {
             System.out.println(err.getMessage());
@@ -102,7 +103,7 @@ public class DatabaseService {
             Statement stat = con.createStatement();
 
 
-            String sql = "update videogames set " + variableType + " = " + variable + "where ID= " + title;
+            String sql = "update videogames set " + variableType + " = " + variable + "where Title= " + title;
 
             stat.executeQuery(sql);
 
